@@ -5,11 +5,15 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FavoriteDestinationComponent } from './favorite-destination/favorite-destination.component';
 import { MatIconModule } from '@angular/material/icon';
+import { DestinationDetailsComponent } from './destination-details/destination-details.component';
+import { DestinationSummaryComponent } from './destination-summary/destination-summary.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    FavoriteDestinationComponent
+    FavoriteDestinationComponent,
+    DestinationDetailsComponent,
+    DestinationSummaryComponent
   ],
   imports: [
     BrowserModule,

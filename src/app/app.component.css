@@ -32,7 +32,6 @@
   background-color: rgba(255, 255, 255, 0.3);
 }
 
-/**** Destination details styling ****/
 .destinations-container {
   width: 500px;
   margin: 10px auto;
@@ -45,39 +44,6 @@
   max-width: 500px;
   min-width: 300px;
   margin-bottom: 10px;
-}
-
-.destination-title {
-  font-size: 1.5rem;
-  font-weight: bold;
-  padding-bottom: 10px;
-  color: #333
-}
-
-.destination-details {
-  display: grid;
-  grid-template-columns: 2fr 7fr;
-  grid-row-gap: 5px;
-}
-
-.destination-details .label {
-  color: #333;
-  font-weight: bold;
-}
-
-/**** Destination summary styling ****/
-.display-as-list::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-.display-as-list .title {
-  font-weight: bold;
-}
-
-.display-as-list .price {
-  float: right;
 }
 
 /**** Button list/cards ****/
