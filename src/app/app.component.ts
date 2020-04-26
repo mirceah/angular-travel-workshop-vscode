@@ -28,5 +28,6 @@ export class AppComponent {
 
   toggleDisplay() {    
     // accesarea proprietatii 'isList' din clasa AppComponent se face astfel: this.isList
+    this.isList = !this.isList;
   }
 }
