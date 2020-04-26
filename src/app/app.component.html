@@ -27,6 +27,6 @@
     </div>
     
     <!-- Add FavoriteComponent here -->
-    <app-favorite-destination [isFavorite]="destination.isFavorite"></app-favorite-destination>
+    <app-favorite-destination [isFavorite]="destination.isFavorite" (favClick)="destination.isFavorite = !destination.isFavorite"></app-favorite-destination>
   </div>
 </div>
