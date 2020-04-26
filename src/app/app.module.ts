@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-// import { RouterModule } from '@angular/router';
+import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -24,11 +24,12 @@ import { ContactComponent } from './contact/contact.component';
     BrowserModule,
     BrowserAnimationsModule,
     MatIconModule,
-    // RouterModule.forRoot([
-    //   { path: 'destinations', component: DestinationsComponent },
-    //   // route to contact component
-    //   { path: '', redirectTo: '/destinations', pathMatch: 'full' }
-    // ])
+    RouterModule.forRoot([
+      { path: 'destinations', component: DestinationsComponent },
+      { path: 'contact', component: ContactComponent },
+      // route to contact component
+      { path: '', redirectTo: '/destinations', pathMatch: 'full' }
+    ])
   ],
   providers: [],
   bootstrap: [AppComponent]
