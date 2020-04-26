@@ -24,6 +24,4 @@ export class AppComponent {
       isFavorite: false,
     }
   ];
-
-  destination = this.destinations[0]
 }
