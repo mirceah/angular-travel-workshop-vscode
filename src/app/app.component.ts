@@ -6,6 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular-travel-workshop-vscode';
-  name = 'pagina goala';
+  name = 'meTravel';
+
+  destination = {
+      name: 'Minas Tirith',
+      summary: 'Fortified capital of the kingdom of Gondor',
+      description: 'Minas Tirith covered the entire Hill of Guard. You will see well preserved weapon chambers , climb through the seven levels all the way up to the Citadel where you can feast at the lovely Isildur restaurant, just like kings used to',
+      price: 4800,
+      isFavorite: false,
+    };
 }
