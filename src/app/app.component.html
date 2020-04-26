@@ -7,7 +7,7 @@
     Display as: <button (click)="toggleDisplay()"> {{ isList ? 'Cards' : 'List' }} </button>
   </div>
 
-  <div *ngFor="let destination of destinations" class="destination">
+  <div *ngFor="let destination of destinationsService.destinations" class="destination">
     <app-destination-details *ngIf="!isList" [destination]="destination"></app-destination-details>
     <app-destination-summary *ngIf="isList" [destination]="destination"></app-destination-summary>
     
