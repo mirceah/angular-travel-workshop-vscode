@@ -3,6 +3,10 @@
 </nav>
 
 <div class="destinations-container">
+  <div class="display-toggle">
+    Display as: <button> List/Cards </button>
+  </div>
+  
   <div *ngFor="let destination of destinations" class="destination">
     <div class="display-as-card" *ngIf="!isList">
       <div class="destination-title"> {{ destination.name }} </div>
