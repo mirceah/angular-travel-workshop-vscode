@@ -10,6 +10,7 @@ import { DestinationDetailsComponent } from './destination-details/destination-d
 import { DestinationSummaryComponent } from './destination-summary/destination-summary.component';
 import { DestinationsComponent } from './destinations/destinations.component';
 import { ContactComponent } from './contact/contact.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { ContactComponent } from './contact/contact.component';
     BrowserModule,
     BrowserAnimationsModule,
     MatIconModule,
+    FormsModule,
     RouterModule.forRoot([
       { path: 'destinations', component: DestinationsComponent },
       { path: 'contact', component: ContactComponent },
