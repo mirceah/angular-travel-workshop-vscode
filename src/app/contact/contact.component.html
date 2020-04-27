@@ -32,7 +32,7 @@
         <div>
           <button 
             class="btn"
-            (click)="addTestimonial()">
+            (click)="destinationsService.addTestimonial(name, message)">
             Share your experience
           </button>
         </div>
@@ -42,7 +42,7 @@
     <div class="testimonials">
       <h3>Testimonials</h3>
       <hr />
-      <div class="testimonial" *ngFor="let testimonial of testimonials">
+      <div class="testimonial" *ngFor="let testimonial of destinationsService.testimonials">
         <div class="message"> "{{ testimonial.message }}" </div>
         <div class="name"> {{ testimonial.name }} </div>
       </div>

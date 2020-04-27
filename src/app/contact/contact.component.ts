@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DestinationsService } from '../destinations.service';
 
 @Component({
   selector: 'app-contact',
@@ -10,19 +11,6 @@ export class ContactComponent {
   name = '';
   message = '';
 
-  testimonials = [
-    {
-      name: 'Gandalf',
-      message: 'Am venit că... vroiam să... aflăm ce se petrece, că e prima dată care am venit '
-    },
-    {
-      name: 'Sauron',
-      message: 'Caut un inel, dar nu gasesc. Inel cu inscriptia: "ash nazg thrakatulûk, agh burzum-ishi krimpatul". Toata lumea sa apeleze la mine. Ofer recompensa!'
-    },
-  ];
-
-  addTestimonial() {
-    this.testimonials.unshift({ name: this.name, message: this.message });
-  }
+  constructor(public destinationsService: DestinationsService) {}
 
 }

@@ -22,5 +22,20 @@ export class DestinationsService {
     }
   ];
 
+  testimonials = [
+    {
+      name: 'Gandalf',
+      message: 'Am venit că... vroiam să... aflăm ce se petrece, că e prima dată care am venit '
+    },
+    {
+      name: 'Sauron',
+      message: 'Caut un inel, dar nu gasesc. Inel cu inscriptia: "ash nazg thrakatulûk, agh burzum-ishi krimpatul". Toata lumea sa apeleze la mine. Ofer recompensa!'
+    },
+  ];
+
   constructor() { }
+
+  addTestimonial(name, message) {
+    this.testimonials.unshift({ name: name, message: message });
+  }
 }
